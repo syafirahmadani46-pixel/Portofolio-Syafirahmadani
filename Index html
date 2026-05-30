@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portofolio - Syafirahmadani</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f5f7fb;
+    color:#333;
+    line-height:1.7;
+}
+
+header{
+    min-height:100vh;
+    background:linear-gradient(135deg,#1e3c72,#2a5298);
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero{
+    max-width:800px;
+}
+
+.hero img{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    border:5px solid rgba(255,255,255,.3);
+    object-fit:cover;
+    margin-bottom:20px;
+}
+
+.hero h1{
+    font-size:3rem;
+    margin-bottom:10px;
+}
+
+.hero p{
+    font-size:1.1rem;
+    opacity:.9;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:12px 30px;
+    background:white;
+    color:#1e3c72;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding:80px 0;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-title h2{
+    font-size:2.3rem;
+    color:#1e3c72;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.about{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+}
+
+.info-box{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.info-box h3{
+    margin-bottom:15px;
+    color:#1e3c72;
+}
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.skill{
+    background:#1e3c72;
+    color:white;
+    padding:10px 15px;
+    border-radius:20px;
+    font-size:.9rem;
+}
+
+footer{
+    background:#1e3c72;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+@media(max-width:768px){
+    .hero h1{
+        font-size:2.2rem;
+    }
+
+    .about{
+        grid-template-columns:1fr;
+    }
+}
+</style>
+</head>
+<body>
+
+<header>
+    <div class="hero">
+        <img src="https://via.placeholder.com/180" alt="Foto Profil">
+        <h1>Syafirahmadani</h1>
+        <p>Mahasiswa | Future Feed Technology Specialist</p>
+        <a href="#about" class="btn">Lihat Portofolio</a>
+    </div>
+</header>
+
+<section class="container" id="about">
+    <div class="section-title">
+        <h2>Tentang Saya</h2>
+    </div>
+
+    <div class="about">
+        <div class="info-box">
+            <h3>Profil</h3>
+            <p>
+                Saya adalah mahasiswa yang memiliki minat besar dalam bidang teknologi,
+                peternakan, dan inovasi digital. Saya senang mempelajari hal-hal baru,
+                berkolaborasi dalam tim, serta mengembangkan solusi kreatif yang dapat
+                memberikan dampak positif bagi masyarakat. Dengan semangat belajar yang
+                tinggi, saya terus meningkatkan kemampuan akademik dan profesional untuk
+                menghadapi tantangan masa depan.
+            </p>
+        </div>
+
+        <div class="info-box">
+            <h3>Informasi Pribadi</h3>
+            <p><strong>Nama:</strong> Syafirahmadani</p>
+            <p><strong>Jenis Kelamin:</strong> Perempuan</p>
+            <p><strong>Pekerjaan:</strong> Mahasiswa</p>
+            <p><strong>Alamat:</strong> Makassar, Sulawesi Selatan</p>
+            <p><strong>Email:</strong> syafirahmadani.portfolio@gmail.com</p>
+            <p><strong>Telepon:</strong> +62 812-3456-7890</p>
+        </div>
+    </div>
+</section>
+
+<section class="container">
+    <div class="section-title">
+        <h2>Pendidikan</h2>
+    </div>
+
+    <div class="cards">
+        <div class="card">
+            <h3>S1 Teknologi Pakan Ternak</h3>
+            <p>Universitas Nusantara Teknologi</p>
+            <p>2023 - Sekarang</p>
+        </div>
+
+        <div class="card">
+            <h3>SMA Negeri Unggulan</h3>
+            <p>Jurusan IPA</p>
+            <p>2020 - 2023</p>
+        </div>
+    </div>
+</section>
+
+<section class="container">
+    <div class="section-title">
+        <h2>Pengalaman Kerja</h2>
+    </div>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Research Assistant Intern</h3>
+            <p>AgroFeed Innovation Center</p>
+            <p>2024</p>
+            <p>Membantu penelitian pengembangan pakan berbasis bahan lokal untuk meningkatkan produktivitas ternak.</p>
+        </div>
+
+        <div class="card">
+            <h3>Content Creator Edukasi Peternakan</h3>
+            <p>Livestock Digital Academy</p>
+            <p>2024 - 2025</p>
+            <p>Membuat konten edukatif mengenai teknologi pakan dan manajemen peternakan modern.</p>
+        </div>
+
+        <div class="card">
+            <h3>Project Coordinator</h3>
+            <p>Smart Farming Youth Program</p>
+            <p>2025</p>
+            <p>Mengelola proyek pengembangan teknologi pertanian dan peternakan berbasis digital.</p>
+        </div>
+    </div>
+</section>
+
+<section class="container">
+    <div class="section-title">
+        <h2>Pencapaian & Karier</h2>
+    </div>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Juara 1 Innovation Challenge 2025</h3>
+            <p>Kompetisi inovasi teknologi pakan tingkat nasional.</p>
+        </div>
+
+        <div class="card">
+            <h3>Best Student Research Award</h3>
+            <p>Penghargaan penelitian mahasiswa terbaik tahun 2025.</p>
+        </div>
+
+        <div class="card">
+            <h3>Speaker Nasional</h3>
+            <p>Menjadi pembicara muda dalam seminar teknologi peternakan dan keberlanjutan.</p>
+        </div>
+    </div>
+</section>
+
+<section class="container">
+    <div class="section-title">
+        <h2>Keahlian</h2>
+    </div>
+
+    <div class="skills">
+        <span class="skill">Public Speaking</span>
+        <span class="skill">Leadership</span>
+        <span class="skill">Research</span>
+        <span class="skill">Data Analysis</span>
+        <span class="skill">Microsoft Office</span>
+        <span class="skill">Digital Marketing</span>
+        <span class="skill">Project Management</span>
+        <span class="skill">Teamwork</span>
+    </div>
+</section>
+
+<section class="container">
+    <div class="section-title">
+        <h2>Kontak</h2>
+    </div>
+
+    <div class="info-box">
+        <p><strong>Email:</strong> syafirahmadani.portfolio@gmail.com</p>
+        <p><strong>Instagram:</strong> @syafirahmadani</p>
+        <p><strong>LinkedIn:</strong> linkedin.com/in/syafirahmadani</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Syafirahmadani. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
